@@ -1,34 +1,39 @@
-/* PENGATURAN DASAR */
+/* =================================
+   1. PENGATURAN DASAR
+================================= */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f4f8;
+    background-color: lightyellow;
     color: #333333;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
 }
 
-/* NAVBAR: BAGIAN BARU */
+
+/* =================================
+   2. NAVBAR - PERTEMUAN 5
+================================= */
 nav {
-    background-color: #2563eb;
+    background-color: #102951;
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
+    padding: 15px 25px;
 }
 
 /* NAMA WEBSITE */
 .logo {
+    color: white;
     font-size: 22px;
-    font-weight: bold;
+    margin: 0;
 }
 
-/* DAFTAR MENU NAVBAR */
+/* DAFTAR MENU */
 nav ul {
-    list-style: none;
     display: flex;
     gap: 20px;
+    list-style: none;
     margin: 0;
     padding: 0;
 }
@@ -38,46 +43,64 @@ nav a {
     color: white;
     text-decoration: none;
     font-size: 16px;
+    transition: 0.3s;
 }
 
-/* EFEK SAAT KURSOR DIARAHKAN KE MENU */
+/* EFEK HOVER NAVBAR */
 nav a:hover {
-    color: #facc15;
+    color: #60a5fa;
 }
 
-/* BAGIAN KONTEN WEBSITE */
+
+/* =================================
+   3. BAGIAN KONTEN WEBSITE
+================================= */
 section {
     background-color: white;
-    margin: 25px auto;
-    padding: 25px;
+    width: 80%;
     max-width: 800px;
-    border-radius: 10px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 12px;
 }
 
-/* JUDUL UTAMA */
+
+/* =================================
+   4. JUDUL UTAMA
+================================= */
 h1 {
-    color: #2563eb;
+    color: blue;
     font-size: 32px;
     text-align: center;
 }
 
-/* JUDUL BAGIAN */
-h2 {
-    color: #2563eb;
+
+/* =================================
+   5. JUDUL BAGIAN
+================================= */
+section h2 {
+    color: #102951;
     text-align: center;
 }
 
-/* SUBJUDUL */
-h3 {
-    color: #333333;
-}
 
-/* PARAGRAF */
+/* =================================
+   6. PARAGRAF
+================================= */
 p {
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 1.6;
 }
 
-/* FOTO PROFIL */
+/* DESKRIPSI DI BAGIAN HOME */
+.deskripsi {
+    text-align: center;
+}
+
+
+/* =================================
+   7. FOTO PROFIL
+================================= */
 .foto-profil {
     display: block;
     width: 200px;
@@ -85,51 +108,28 @@ p {
     object-fit: cover;
     border-radius: 50%;
     margin: 20px auto;
+
+    /* TAMBAHAN P8 */
+    transition: 0.3s;
 }
 
-/* DAFTAR KEAHLIAN DAN HOBI */
-.daftar-keahlian,
-.daftar-hobi {
-    padding-left: 25px;
+/* EFEK HOVER FOTO - P8 */
+.foto-profil:hover {
+    transform: scale(1.05);
 }
 
-/* LINK KARYA DAN EMAIL */
+
+/* =================================
+   8. LINK DI DALAM KONTEN
+================================= */
 section a {
-    color: #2563eb;
+    color: blue;
 }
 
-/* FOOTER */
-footer {
-    background-color: #1e293b;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 30px;
-}
 
-/* PENYESUAIAN UNTUK LAYAR KECIL */
-@media (max-width: 600px) {
-    nav {
-        flex-direction: column;
-        gap: 15px;
-        padding: 15px;
-    }
-
-    nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
-    }
-
-    nav a {
-        font-size: 14px;
-    }
-
-    section {
-        margin: 15px;
-        padding: 18px;
-    }
-}/* WADAH UNTUK SEMUA CARD */
+/* =================================
+   9. WADAH UNTUK SEMUA CARD
+================================= */
 .container-card {
     display: flex;
     gap: 20px;
@@ -137,7 +137,10 @@ footer {
     justify-content: center;
 }
 
-/* TAMPILAN CARD */
+
+/* =================================
+   10. TAMPILAN CARD
+================================= */
 .card {
     width: 250px;
     padding: 15px;
@@ -146,9 +149,21 @@ footer {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+
+    /* TAMBAHAN P8 */
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* GAMBAR DALAM CARD */
+/* EFEK HOVER CARD - P8 */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =================================
+   11. GAMBAR DALAM CARD
+================================= */
 .card img {
     width: 100%;
     height: 150px;
@@ -156,21 +171,30 @@ footer {
     border-radius: 8px;
 }
 
-/* JUDUL CARD */
+
+/* =================================
+   12. JUDUL CARD
+================================= */
 .card h3 {
     color: #2563eb;
     font-size: 20px;
     margin: 10px 0;
 }
 
-/* DESKRIPSI CARD */
+
+/* =================================
+   13. DESKRIPSI CARD
+================================= */
 .card p {
     font-size: 14px;
     color: #555;
     margin-bottom: 15px;
 }
 
-/* TOMBOL LIHAT PROYEK */
+
+/* =================================
+   14. TOMBOL LIHAT PROYEK
+================================= */
 .card a {
     display: inline-block;
     background-color: #2563eb;
@@ -178,9 +202,28 @@ footer {
     padding: 8px 15px;
     text-decoration: none;
     border-radius: 5px;
+
+    /* TAMBAHAN P8 */
+    transition: 0.3s;
 }
+
 
 /* EFEK HOVER TOMBOL */
 .card a:hover {
     background-color: #1e40af;
+
+    /* TAMBAHAN P8 */
+    transform: scale(1.05);
+}
+
+
+/* =================================
+   15. BAGIAN PENUTUP
+================================= */
+footer {
+    background-color: #102951;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
 }
