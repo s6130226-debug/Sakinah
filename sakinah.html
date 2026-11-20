@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil Saya</title>
+    <title>Portofolio Sakinah</title>
 
-    <!-- Menghubungkan HTML dengan CSS -->
+    <!-- Menghubungkan HTML dengan CSS Utama dan Responsive -->
     <link rel="stylesheet" href="style.css">
-</head><link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
 <body>
 
-    <!-- NAVBAR: BAGIAN BARU -->
+    <!-- NAVBAR -->
     <nav>
         <div class="logo">Profil Saya</div>
-
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#keahlian">Keahlian</a></li>
@@ -22,12 +22,11 @@
         </ul>
     </nav>
 
-    <!-- HOME: PENGEMBANGAN KONTEN LAMA -->
+    <!-- HOME / TENTANG SAYA -->
     <section id="home">
         <h1>Sakinah</h1>
-
-        <p>
-            Hallo, Aku Sakinah, aku siswa kelas XI TKJ 1 di SMKN 1 Pakisjaya
+        <p class="deskripsi">
+            Halo, Aku Sakinah, aku siswa kelas XI TKJ 1 di SMKN 1 Pakisjaya.
         </p>
 
         <h2>Tentang Saya</h2>
@@ -38,38 +37,36 @@
             class="foto-profil"
         >
 
-        <p>saya senang belajar tentang hal-hal baru tentang komputer dan teknologi dan saya selalu berusaha menjadi versi terbaik dari diri saya
+        <p>
+            Saya senang belajar tentang hal-hal baru mengenai komputer dan teknologi, serta selalu berusaha menjadi versi terbaik dari diri saya.
         </p>
 
         <p>
-            Website ini merupakan portofolio sederhana untuk
-            memperkenalkan diri dan menampilkan karya saya.
+            Website ini merupakan portofolio sederhana untuk memperkenalkan diri dan menampilkan karya saya.
         </p>
     </section>
 
-    <!-- KEAHLIAN: BAGIAN BARU -->
+    <!-- KEAHLIAN -->
     <section id="keahlian">
         <h2>Keahlian Saya</h2>
-
         <p>Berikut beberapa kemampuan yang sedang saya pelajari:</p>
-
-        <ul class="daftar-keahlian">
-            <li>mengenal perangkat keras komputer</li>
-            <li>membuat kabel Jaringan</li>
-            <li>Mengatur warna, ukuran tulisan, dan gambar</li>
-            <li>Membuat halaman website sederhana</li>
-        </ul>
+<ul class="skill-list">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Desain</li>
+    <li>Pengembangan Web</li>
+</ul>
     </section>
-<!-- KARYA SAYA -->
+
+    <!-- KARYA SAYA -->
     <section id="karya">
         <h2>Karya Saya</h2>
 
         <h3>Hobi Saya</h3>
-
         <ul>
             <li>Belajar desain</li>
             <li>Mendengarkan musik</li>
-            <li>Mempelajari teknologi</li>
+            <li>Mempelajari teknologi jaringan</li>
         </ul>
 
         <h3>Proyek Saya</h3>
@@ -79,39 +76,43 @@
 
             <!-- CARD 1 -->
             <div class="card">
-                <img src="projeksakinah/sakinah.jpg"
-                     alt="Website Portofolio">
-
+                <img src="projeksakinah/sakinah.jpg" alt="Website Portofolio">
                 <h3>Website Portofolio</h3>
-
                 <p>
-                    Website sederhana untuk memperkenalkan
-                    diri dan menampilkan hasil karya saya.
+                    Website sederhana untuk memperkenalkan diri dan menampilkan hasil karya saya.
                 </p>
-
                 <a href="#">Lihat Proyek</a>
+            </div>
+
+            <!-- CARD 2 (Tambahan Proyek Jaringan TKJ) -->
+            <div class="card">
+                <img src="projeksakinah/jaringan.jpg" alt="Praktikum Jaringan">
+                <h3>Praktikum Jaringan</h3>
+                <p>
+                    Pengalaman membuat kabel jaringan UTP dan konfigurasi dasar perangkat komputer.
+                </p>
+                <a href="#">Lihat Detail</a>
             </div>
                    
         </div>
     </section>
 
-    <!-- KONTAK: BAGIAN BARU -->
+    <!-- KONTAK -->
     <section id="kontak">
         <h2>Kontak Saya</h2>
-
-        <p>Terima kasih sudah mengunjungi website saya.</p>
-
+        <p>sakinah</p>
         <p>
             Email:
-            <a href="mailto:s6130226@gmail.com">
-                 s6130226@gmail.com
-            </a>
+            <a href="mailto:s6130226@gmail.com"
+   class="contact-button">
+    Kirim Email
+</a>
         </p>
     </section>
 
     <!-- FOOTER -->
     <footer>
-        <p>&copy; 2026 Profil Saya. Dibuat dengan HTML dan CSS.</p>
+        <p>&copy; 2026 Sakinah - SMKN 1 Pakisjaya. Dibuat dengan HTML dan CSS.</p>
     </footer>
 
 </body>
